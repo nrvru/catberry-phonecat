@@ -1,0 +1,6 @@
+section#phonecat-app
+case currentPage
+    when 'phoneDetails'
+        cat-phone-detail#cat-phone-detail(cat-store="PhoneDetail")
+    default
+        cat-phone-list#cat-phone-list(cat-store="PhoneList")

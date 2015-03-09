@@ -1,0 +1,5 @@
+{
+	"name": "phonecat-app",
+	"template": "./template.jade",
+	"errorTemplate": "./error.jade"
+}

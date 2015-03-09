@@ -1,0 +1,16 @@
+div.container-fluid
+    div.row
+        div.col-md-2
+            | Search:
+            input#search
+            | SortBy:
+            select#order-prop
+                option(value="name") Alphabetical
+                option(value="age") Newest
+        div.col-md-10
+            ul.phones
+                each phone in phones
+                    li.thumbnail.phone-listing
+                        a.thumb(href="/phones/" + phone.id): img(src='/' + phone.imageUrl)
+                        a(href="/phones/" + phone.id)= phone.name
+                        p= phone.snippet

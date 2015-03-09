@@ -1,0 +1,5 @@
+{
+	"name": "phone-detail",
+	"template": "./template.jade",
+	"errorTemplate": "./error.jade"
+}
